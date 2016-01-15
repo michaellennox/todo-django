@@ -1,7 +1,6 @@
 from django.test import LiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-import unittest
 
 
 class NewVisitorTest(LiveServerTestCase):
@@ -87,11 +86,3 @@ class NewVisitorTest(LiveServerTestCase):
         self.assertIn('Buy milk', page_text)
 
         # Satisfied they both go back to sleep
-        self.fail('Finish the test!')
-
-        # Now she goes to the URL and oh gosh darn what do you know
-        # the to-do list is still there!
-
-        # I wonder was that magic or just an awesome programmer called Michael
-        # (who really should get hired by someone if they've read this)
-        # Satisfied, she goes back to sleep
